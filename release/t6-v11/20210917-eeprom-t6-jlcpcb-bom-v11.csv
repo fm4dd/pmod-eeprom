@@ -1,0 +1,5 @@
+Comment,Designator,Footprint,LCSC Part #
+M24M01-R,U1,SOIC-8_3.9x4.9mm_P1.27mm,
+10K,R3,Resistor_SMD:R_0603_1608Metric,
+4.7K,"R2,R1",Resistor_SMD:R_0603_1608Metric,
+0.1uF,"C3,C2,C1",Capacitor_SMD:C_0603_1608Metric,
