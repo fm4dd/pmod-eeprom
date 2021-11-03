@@ -41,7 +41,7 @@
 //  1.5.0   2021-06-30  #28 fix addressing 24LC04/08/16
  
 
-#include <I2C_eeprom.h>
+#include "I2C_eeprom.h"
 
 // Not used directly
 #define I2C_PAGESIZE_24LC512          128
@@ -224,8 +224,7 @@ uint32_t I2C_eeprom::determineSize(const bool debug)
   uint8_t patAA = 0xAA;
   uint8_t pat55 = 0x55;
 
-  for (uint32_t size = 128; size <= 65536; size *= 2)
-  {
+  for (uint32_t size = 128; size <= 65536; size *= 2) {
     bool folded = false;
 
     // store old values

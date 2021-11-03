@@ -1,4 +1,6 @@
-## EEPROM PMOD
+## PMOD-EEPROM
+
+![xiao-test](https://github.com/fm4dd/pmod-eeprom/actions/workflows/xiao.yml/badge.svg)
 
 ### Description
 
@@ -29,7 +31,7 @@ Ensure the I2C bus is enabled, and install prerequisite I2C tools:
 # raspi-config  2 Interface Options  enable I2C
 ```
 
-Check the IO expander circuit is visible on the I2C bus under address 0x50..0x56, depending on the address set through the DIP switch.
+Check the IO expander circuit is visible on the I2C bus under address 0x50..0x56, depending on the address set through the DIP switch. Below example address 0x50/51 is set with SW1-1 = off and SW1-2 = off.
 ```
 pi@pi-ms05:~ $ i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -95,3 +97,7 @@ Writing...
 Closing EEPROM Device.
 Done.
 ```
+
+<img src="images/t6a-v10/pmod-eeprom-pmod2rpi-xiao.png" width="400px">
+
+PMOD-EEPROM on a PMOD2RPI interface board, running code from the XIAO Cortex M0+ MCU.
